@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Priced Out: Washington Housing</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+
+<body>
+  <header class="hero">
+    <h1>Priced Out: Washington’s Housing Affordability Crisis</h1>
+    <p>
+      Washington’s housing market has changed dramatically since the early 2010s. Using Zillow county level
+      housing data, we can see the massive and dramtic changes and rise in the cost of buying a home, which counties
+      are the most expensive today, and how much more expensive homes are now compared to the early 2010s.
+    </p>
+  </header>
+
+  <main>
+    <section class="story-section">
+      <h2>1. Home values climbed sharply in Washington’s most expensive counties</h2>
+      <p>
+        Down below you will see the average cost of homes in each county from the early 2010s to the present days. 
+        As you can see, the dramtic rise in price for homes did not happen instantly. Instead,
+        prices rose over time and accelerated in recent years, making homeownership harder for many
+        residents and for some, impossible.
+      </p>
+
+      <div id="line-chart" class="chart"></div>
+    </section>
+
+    <section class="story-section">
+      <h2>2. Washington’s most expensive counties are not evenly distributed</h2>
+      <p>
+        Here, we take a look closer at the top ten counties with the highest current Zillow home values.
+        The visualization helps show that housing pressure is especially concentrated in certain
+        counties, often near major job centers and high demand regions.
+      </p>
+
+      <div id="bar-chart" class="chart"></div>
+    </section>
+
+    <section class="story-section">
+      <h2>3. Homes are not just expensive, they are far more expensive than they used to be</h2>
+      <p>
+        This chart compares home values in 2010 with the most recent values for the
+        highest priced Washington counties. A simple before and after view of
+        long term housing change to get us thinking on how much harder it got for the general public to afford a home of their own.
+      </p>
+
+      <div id="scatter-chart" class="chart"></div>
+    </section>
+
+    <section class="story-section">
+      <h2>Why this matters</h2>
+      <p>
+        Housing is not only a private financial issue. It affects where people can live, how long
+        they commute, whether families can build wealth, and whether communities remain accessible
+        to workers, students, and longtime residents. Public housing data can help make these changes
+        visible and support more informed conversations about affordability in Washington.
+      </p>
+    </section>
+
+    <section class="story-section">
+      <h3>Data source and credit</h2>
+      <p>
+        Zillow Research, Zillow Home Value Index (ZHVI), county level all homes data.
+        The dataset used in this project is saved locally as <strong>wa_housing.csv</strong>.
+      </p>
+      <p>
+        Zillow Research provides public housing datasets for research and analysis. Values shown here
+        represent Zillow’s estimate of typical home values by county over time.
+      </p>
+    </section>
+
+  </main>
+
+  <div id="tooltip"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>

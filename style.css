@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f4ef;
+  color: #222;
+  line-height: 1.6;
+}
+
+.hero {
+  background: #1f2933;
+  color: white;
+  padding: 70px 12%;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+main {
+  width: 85%;
+  max-width: 1100px;
+  margin: 50px auto;
+}
+
+.story-section {
+  background: white;
+  padding: 35px;
+  margin-bottom: 45px;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+.story-section h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  color: #1f2933;
+}
+
+.chart {
+  width: 100%;
+  min-height: 460px;
+  margin-top: 25px;
+}
+
+svg {
+  width: 100%;
+  height: auto;
+}
+
+.line {
+  fill: none;
+  stroke: #2563eb;
+  stroke-width: 4;
+}
+
+.dot {
+  fill: #2563eb;
+  stroke: white;
+  stroke-width: 1.5px;
+  cursor: pointer;
+}
+
+.bar {
+  fill: #2563eb;
+  cursor: pointer;
+}
+
+.bar:hover {
+  fill: #1e40af;
+}
+
+.scatter-dot {
+  fill: #dc2626;
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.scatter-dot:hover {
+  opacity: 1;
+  stroke: black;
+  stroke-width: 1.5px;
+}
+
+.axis text {
+  font-size: 12px;
+}
+
+#tooltip {
+  position: fixed;
+  opacity: 0;
+  background: white;
+  color: #111;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 14px;
+  pointer-events: none;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.18);
+  z-index: 9999;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.legend-color {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+}
+
+@media (max-width: 700px) {
+  .hero {
+    padding: 45px 7%;
+  }
+
+  .hero h1 {
+    font-size: 2.1rem;
+  }
+
+  main {
+    width: 92%;
+  }
+
+  .story-section {
+    padding: 22px;
+  }
+}
