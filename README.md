@@ -4,7 +4,7 @@
 
 View the interactive website here:
 
-**https://hyoungtakdo.github.io/REPOSITORY-NAME/**
+**[https://hyoungtakdo.github.io/REPOSITORY-NAME/](https://hyoungtakdo.github.io/Priced-Out/)**
 
 ## Overview
 
